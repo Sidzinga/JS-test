@@ -1,17 +1,36 @@
 
+$("#form").submit( function(e){
 
-function newUser(){
-    let firstname = $("#firstname").val();
+  e.preventDefault()
+
+  let firstname = $("#firstname").val();
+  
 let lastname = $("#lastname").val();
 let email = $("#email").val();
-let userInfo = JSON.stringify({fisrtname:firstname,
-    lastname:lastname,
-    email:email})
-// console.log(fisrtname)
+let password = $("#password").val();
 
-localStorage.setItem("users",userInfo)
 
-let saved = localStorage.getItem("users")
-// console.log(saved)
-// window.location = "dashboard.html";
+let saved = localStorage.getItem('users')
+let makeChange = JSON.parse(saved)
+
+
+console.log(typeof saved)
+console.log(makeChange)
+
+let userInfo = {fisrtname:firstname,
+  lastname:lastname,
+    email:email,
+  password:password}
+
+
+if(makeChange == null){
+  makeChange = []
 }
+
+makeChange.push(userInfo)
+console.log(userInfo)
+
+localStorage.setItem("users",JSON.stringify(makeChange))
+window.location = "login.html";
+}
+) 
