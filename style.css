@@ -1,8 +1,14 @@
-body{ background-color: aqua;}
+body{ background-color: aqua;
+
+    background-repeat: no-repeat;
+  background-size: auto;
+background-image: url("https://picsum.photos/2500");
+
+}
 
 .info{
     padding: 40px;
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.284);
     width: 500px;
     height: 250px;
 }
