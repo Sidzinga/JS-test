@@ -17,7 +17,7 @@ let makeChange = JSON.parse(saved)
 console.log(typeof saved)
 console.log(makeChange)
 
-let userInfo = {fisrtname:firstname,
+let userInfo = {firstname:firstname,
   lastname:lastname,
     email:email,
   password:password}
