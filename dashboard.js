@@ -213,7 +213,7 @@ $("#deletewindow").show()
   });
 
 
-  $("continue").click(()=>{
+  $("#continue").click(()=>{
     $("#deletewindow").hide()
   })
 
