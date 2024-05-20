@@ -54,13 +54,7 @@ localStorage.setItem("users", JSON.stringify(savedUsers))
 localStorage.setItem("loggedUser",JSON.stringify(newUserInfo))
 
 location.reload()
-
-}
-
-}
-
-
-})
+}}})
 
 
 
@@ -79,9 +73,6 @@ $("#lnamedone").click(()=>{
    $("#lnamedone").hide()
 $("#lastname").show()
 $("#editlname").show()
-
-
-
 let lastname = $("#newlname").val()
 
 
@@ -101,12 +92,7 @@ localStorage.setItem("users", JSON.stringify(savedUsers))
 localStorage.setItem("loggedUser",JSON.stringify(newUserInfo))
 
 location.reload()
-}
-
-}
-
-
-})
+}}})
 
 
 $("#editemail").click(()=>{
@@ -260,3 +246,5 @@ $("#welcome").text(`Welcome ${userData.firstname}`)
 $("#surname").text(` How may we help the ${userData.lastname} family`)
 
 $("#email").text(` Would like us to send updates to ${userData.email}`)
+
+
