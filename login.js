@@ -39,3 +39,7 @@ else {
 
   }
   )
+  $("#register").click(function (e) { 
+    e.preventDefault();
+    window.location = "register.html"
+  });

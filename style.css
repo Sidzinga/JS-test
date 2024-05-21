@@ -6,6 +6,13 @@ background-image: url("https://picsum.photos/2500");
 
 }
 
+#login {
+    background-color: rgb(137, 43, 226);
+}
+#register {
+    background-color: rgb(226, 43, 205);
+}
+
 .info{
     padding: 40px;
     background-color: rgba(137, 43, 226, 0.284);

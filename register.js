@@ -30,7 +30,32 @@ if(makeChange == null){
 makeChange.push(userInfo)
 console.log(userInfo)
 
+for(let i = 0;i<makeChange.length;i++){
+
+
+  if(makeChange[i].email === email){
+
+alert("User already exists!! Please Login")
+
+
+setInterval(()=>{
+  console.log("redirect")
+  window.location = "login.html"} , 1000)
+}
+
+
+
+}
+
 localStorage.setItem("users",JSON.stringify(makeChange))
-window.location = "login.html";
+setInterval(()=>{
+  console.log("redirect")
+  window.location = "login.html"} , 1000)
 }
 ) 
+
+
+$("#login").click(function (e) { 
+  e.preventDefault();
+  window.location = "login.html"
+});
