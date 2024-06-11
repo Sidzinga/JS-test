@@ -217,7 +217,7 @@ $("#deleteUser").click(()=>{
     localStorage.setItem("users", JSON.stringify(savedUsers))
 
 
-    window.location = "login.html"
+    window.location = "index.html"
     }
     
     }

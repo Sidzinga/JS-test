@@ -27,13 +27,13 @@ if(makeChange == null){
   makeChange = []
 }
 
-makeChange.push(userInfo)
+
 console.log(userInfo)
 
 for(let i = 0;i<makeChange.length;i++){
 
 
-  if(makeChange[i].email === email){
+  if(makeChange[i].email === email && makeChange[i].email !== null){
 
 alert("User already exists!! Please Login")
 
@@ -42,10 +42,9 @@ setInterval(()=>{
   console.log("redirect")
   window.location = "login.html"} , 1000)
 }
-
-
-
 }
+
+makeChange.push(userInfo)
 
 localStorage.setItem("users",JSON.stringify(makeChange))
 setInterval(()=>{
